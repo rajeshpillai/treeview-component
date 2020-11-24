@@ -1,0 +1,87 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  background: #ccc;
+  font-family: "Fira Mono", monospace, sans-serif;
+  font-size: 20px;
+}
+
+
+body {
+  margin: 10px;
+}
+
+.shadow {
+  box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(#000, 0.4);
+}
+
+.shadow-inset {
+  box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(#000, 0.4);
+}
+
+
+ul, li {
+  cursor: pointer;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+li {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+}
+
+.tree {
+  background: #ccc;
+  min-width: 15rem;
+}
+
+.content {
+  padding: 10px;
+  background: #ddd;
+  width: 100vw;
+  height: 100vh;
+  flex: 2;
+}
+
+ button {
+    box-shadow:  6px 6px 12px #adadad, 
+             -6px -6px 12px #ebebeb;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ccc;
+    margin-right: 4px;
+       
+  }
+
+  button:hover, button:active {
+    background: #ccc;
+  }
+  
+  button:active {
+    box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(#000, 0.4);
+  }
+
+button:hover, button:active {
+  background: #ccc;
+}
+
+button:active {
+   box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(#000, 0.4);
+}
