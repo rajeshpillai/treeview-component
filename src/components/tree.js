@@ -36,7 +36,7 @@ export default function Tree({data=[], isChild = false, onLoadContent}) {
               key={d.id}>
               {d.children && <button>{expanded ? "-" : "+"}</button>}
               {d.title}
-              { (d.children && !state.includes(d.id)) && 
+              { expanded && 
                   <Tree data={d.children} isChild={true} onLoadContent={onLoadContent} />
               }
             </li>
