@@ -29,10 +29,12 @@ export default function Tree({data=[], isChild = false, onLoadContent}) {
     <ul>
      {
         data.map(d => {
+          let expanded = d.children && !state.includes(d.id);
+
           return (
             <li onClick={(e) => handleToggle(e, d)} 
               key={d.id}>
-              {d.children && <button>+</button>}
+              {d.children && <button>{expanded ? "-" : "+"}</button>}
               {d.title}
               { (d.children && !state.includes(d.id)) && 
                   <Tree data={d.children} isChild={true} onLoadContent={onLoadContent} />
